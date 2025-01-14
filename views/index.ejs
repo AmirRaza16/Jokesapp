@@ -12,13 +12,14 @@
     <div class="joke">
         <p><%= locals.jokeQues %> </p>
         <p><%= locals.jokeAns %></p>
+        <div class="jokeCategory">
+            <%= locals.jokeCategory %>
+        </div>
     </div>
-    <div class="jokeCategory">
-        <%= locals.jokeCategory %>
-    </div>
+    
 
     <form action="/get-joke" class="jokeForm">
-        <div>
+        <div class="safe-check">
             <label for="safe-mode">Safe Mode</label>
             <input type="checkbox" name="safe-mode" id="safe-mode">
         </div>
