@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jokesapp | Jokes that make you laugh</title>
+</head>
+<body>
+    <div class="container">
+    <h1><a href="/">Jokesapp</a></h1>
+    <div class="joke">
+        <p><%= locals.jokeQues %> </p>
+        <p><%= locals.jokeAns %></p>
+    </div>
+    <div class="jokeCategory">
+        <%= locals.jokeCategory %>
+    </div>
+
+    <form action="/get-joke" class="jokeForm">
+        <div>
+            <label for="safe-mode">Safe Mode</label>
+            <input type="checkbox" name="safe-mode" id="safe-mode">
+        </div>
+        <button type="submit">Get Joke</button>
+    </form>
+</div>
+    
+</body>
+</html>
